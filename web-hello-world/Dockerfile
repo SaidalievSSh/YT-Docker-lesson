@@ -1,4 +1,6 @@
-FROM python:3.6
+FROM python:3.9-slim as builder
+
+RUN pip install --upgrade pip
 
 RUN mkdir -p /usr/src/app/
 WORKDIR /usr/src/app/
